@@ -31,7 +31,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                         <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
                     </li>
                     <li class="dropdown">
@@ -54,12 +54,12 @@
                     <li>
                         <a href="#contactdetails"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
                     </li>
-                    <li><a href="contact.html"> <i class="fa fa-envelope-o"></i> Contact</a></li>
+                    <li class="active"><a href="contact.html"> <i class="fa fa-envelope-o"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <header class="jumbotron">
         <!-- Component for a primary marketing message -->
         <div class="container">
@@ -80,55 +80,118 @@
             </div>
         </div>
     </header>
-      
+
     <div class="container">
-        <div class="row row-content">
-            <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <p style="padding:20px;"></p>
-                <h3 align=center>Web Projects</h3>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Contact</li>
+                </ul>
             </div>
-            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-              <!-- Bootstrap Media -->
-              <div class="media">
-                <div class="media-left media-middle">
-                  <a href="#">
-                    <img src="img/websites.png" class="media-object img-thumbnail" alt="Websites img" width="130">
-                  </a>
+            <div class="col-xs-12">
+                <h3>Contact Me</h3>
+                <hr>
+            </div>
+        </div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <h3>Location Information</h3>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+                <h5>My Address</h5>
+                <address style="font-size: 100%">
+                    Harrow, London<br>
+                    UNITED KINGDOM<br>
+                    <i class="fa fa-phone"></i>: (+44) 7440118875<br>
+                    <i class="fa fa-envelope"></i>: 
+                    <a href="mailto:joen.sg@gmail.com">joen.sg@gmail.com</a>
+                </address>
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-primary" href="tel:+447440118875"><i class="fa fa-phone"></i> Call</a>
+                    <a type="button" class="btn btn-info" href="skype:joensg?chat"><i class="fa fa-skype"></i> Skype</a>
+                    <a type="button" class="btn btn-success" href="mailto:joen.sg@gmail.com">
+                        <i class="fa fa-envelope-o"></i> Email</a>
                 </div>
-                <div class="media-body">
-                  <h2 class="media-heading">
-                    My Web Projects
-                    <!-- Bootstrap Label-Danger -->
-                    <span class="label label-danger label-xs newlb">New</span>
-                    <!-- Bootstrap Badge -->
-                    <span class="badge">added on 16th Nov 2015</span>
-                  </h2>
-                  <p>
-                    <ol>
-                        <li>
-                            <a href="http://joensg.github.io/Web-Project-1-Simple-form/">Simple form</a>
-                        </li>
-                        <li>
-                            <a href="http://joensg.github.io/Web-Project-2-Color-guessing-game/">Color guessing game</a>
-                        </li>
-                        <li>
-                            <a href="http://joensg.github.io/Web-Project-3-Matching-game/">Matching game</a>
-                        </li>
-                        <li>
-                            <a href="http://joensg.github.io/Web-Project-4-Responsive-web-page/">Responsive web page</a>
-                        </li>
-                        <li>
-                            <a href="http://joensg.github.io/Web-Project-5-ConFusion/">ConFusion</a>
-                        </li>
-                    </ol>
-                </p>
-                  <p><a href="#" class="btn btn-primary btn-xs">More &raquo;</a></p>
-                </div>
-              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                <h5>Map of my Location</h5>
+                <div id="googleMap"></div>
+            </div>
+        </div>
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <h3>Send me your Feedback</h3> 
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <form class="form-horizontal" role="form" action="mailto:joen.sg@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="firstname" class="col-sm-2 control-label">First Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telnum" class="col-xs-12 col-sm-2 control-label">Contact Tel.</label>
+                        <div class="col-xs-5 col-sm-4 col-md-3">
+                            <div class="input-group">
+                                <div class="input-group-addon">(</div>
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                                <div class="input-group-addon">)</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-6 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailid" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox col-sm-5 col-sm-offset-2">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="approve" value="">
+                                <strong>May I contact you?</strong>
+                            </label>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            <button type="reset" class="btn btn-primary">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="container">
             <div class="row row-footer">
@@ -174,6 +237,9 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Include google maps api and custom js file -->
+    <script src="js/googleapis.maps.js"></script>
+    <script src="js/myscript.js"></script>
     
 </body>
 
