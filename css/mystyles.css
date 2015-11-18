@@ -12,6 +12,7 @@
 
 .row-footer{
     background-color: #007EEA;
+    background-image: linear-gradient(to bottom, #007EEA 0%, #0E1125 100%);
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -19,8 +20,8 @@
 .jumbotron {
     padding:5px 30px 20px 30px;
     margin:0px auto;
-    background: #007EEA ;
-    color:floralwhite;
+    background-image: linear-gradient(to bottom, #007EEA 0%, #0E1125 100%);
+    color: #FFFAF0;
 }
 
 address{
@@ -76,7 +77,7 @@ body{
 }
 
 a{
-    color: #042C4E;
+    color: #000000;
 }
 
 .newlb{
