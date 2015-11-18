@@ -81,9 +81,12 @@ a{
 
 .newlb{
     font-size: 40%; 
+<<<<<<< HEAD
 }
 
 #googleMap{
     width: 350px;
     height: 350px;
+=======
+>>>>>>> origin/master
 }
