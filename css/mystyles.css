@@ -5,14 +5,14 @@
 
 .row-content {
     margin:0px auto;
-    padding: 50px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height:400px;
 }
 
 .row-footer{
     background-color: #007EEA;
-    background-image: linear-gradient(to bottom, #007EEA 0%, #0E1125 100%);
+    background-image: linear-gradient(to bottom, #007EEA 0%, #0B0B35 100%);
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -87,4 +87,5 @@ a{
 #googleMap{
     width: 350px;
     height: 350px;
+    border-style: ridge;
 }
