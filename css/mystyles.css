@@ -76,6 +76,10 @@ body{
     font-size: 150%;
 }
 
+.hcenter{
+    text-align:center;
+}
+
 a{
     color: #000000;
 }
