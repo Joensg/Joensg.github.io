@@ -18,16 +18,20 @@
 }
 
 .jumbotron {
-    padding:5px 30px 20px 30px;
-    margin:0px auto;
+    background-color: #007EEA;
     background-image: linear-gradient(to bottom, #007EEA 0%, #0E1125 100%);
-    color: #FFFAF0;
+    margin:0px auto;
+    padding:5px 30px 20px 30px;
 }
 
 address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
+}
+
+.breadcrumb{
+    background-color: #3A3838;
 }
 
 body{
@@ -89,7 +93,7 @@ a{
 }
 
 #googleMap{
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     border-style: ridge;
 }
