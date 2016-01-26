@@ -41,6 +41,10 @@ body{
     z-index:0;
 }
 
+.customheading{
+    color: #BCC6CC;
+}
+
 .navbar-inverse {
      background: #3A3838;
 }
