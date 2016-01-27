@@ -94,12 +94,15 @@ body{
     text-align:center;
 }
 
+<<<<<<< HEAD
 img {
     display: block;
     margin-left: auto;
     margin-right: auto; 
 }
 
+=======
+>>>>>>> origin/master
 a {
     color: #000000;
 }
