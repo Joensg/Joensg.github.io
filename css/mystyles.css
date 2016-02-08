@@ -18,7 +18,7 @@
 
 .row-footer{
     background-color: #007EEA;
-    background-image: linear-gradient(to bottom, #007EEA 0%, #0B0B35 100%);
+    background-image: linear-gradient(to bottom, #9FCFF3 0%, #21217D 100%);
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -48,7 +48,7 @@ body{
 }
 
 .customheading{
-    color: #BCC6CC;
+    color: #FFFFFF;
 }
 
 .navbar-inverse {
@@ -116,4 +116,26 @@ a:hover {
     width: 320px;
     height: 320px;
     border-style: ridge;
+}
+
+.carousel {
+    background:#1A237E;
+}
+
+.carousel-indicators li {
+    border: 1px solid #CCCCCC;
+}
+
+.carousel-indicators .active{
+    background-color: #2E6DA4;
+}
+
+.item img {
+    max-height: 500px;
+}
+
+#carouselButtons {
+    position: absolute;
+    right:45%;
+    bottom: 0px;
 }
